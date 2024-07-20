@@ -1,0 +1,14 @@
+namespace StudentManagement.Domain.NextOfKinContactInformations.Mappings;
+
+using StudentManagement.Domain.NextOfKinContactInformations.Dtos;
+using StudentManagement.Domain.NextOfKinContactInformations.Models;
+using Riok.Mapperly.Abstractions;
+
+[Mapper]
+public static partial class NextOfKinContactInformationMapper
+{
+    public static partial NextOfKinContactInformationForCreation ToNextOfKinContactInformationForCreation(this NextOfKinContactInformationForCreationDto nextOfKinContactInformationForCreationDto);
+    public static partial NextOfKinContactInformationForUpdate ToNextOfKinContactInformationForUpdate(this NextOfKinContactInformationForUpdateDto nextOfKinContactInformationForUpdateDto);
+    public static partial NextOfKinContactInformationDto ToNextOfKinContactInformationDto(this NextOfKinContactInformation nextOfKinContactInformation);
+    public static partial IQueryable<NextOfKinContactInformationDto> ToNextOfKinContactInformationDtoQueryable(this IQueryable<NextOfKinContactInformation> nextOfKinContactInformation);
+}

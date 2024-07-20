@@ -1,0 +1,157 @@
+DomainName: UniversityAdministrationPortal
+BoundedContexts:
+  - ProjectName: StudentManagement
+    Port: 5001
+    DbContext:
+      ContextName: StudentManagementDbContext
+      DatabaseName: StudentManagement
+      Provider: sqlserver
+    Entities:
+      - Name: Student
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: MatriculationNumber
+            Type: string
+          - Name: FirstName
+            Type: string
+          - Name: LastName
+            Type: string
+          - Name: DateOfBirth
+            Type: DateTime
+          - Name: GenderId
+            Type: guid
+          - Name: Email
+            Type: string
+          - Name: PhoneNumber
+            Type: string
+          - Name: StudentContactInformations
+            Relationship: 1tomany
+            ForeignEntityName: StudentContactInformation
+            ForeignEntityPlural: StudentContactInformations
+          - Name: StudentNextOfKins
+            Relationship: 1tomany
+            ForeignEntityName: StudentNextOfKin
+            ForeignEntityPlural: StudentNextOfKins
+      - Name: StudentContactInformation
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: HouseAddress
+            Type: string
+          - Name: City
+            Type: string
+          - Name: State
+            Type: string
+          - Name: ZipCode
+            Type: string
+          - Name: CountryID
+            Type: guid
+          - Name: StudentID
+            Type: guid
+      - Name: StudentNextOfKin
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FirstName
+            Type: string
+          - Name: LastName
+            Type: string
+          - Name: DateOfBirth
+            Type: DateTime
+          - Name: GenderId
+            Type: guid
+          - Name: Email
+            Type: string
+          - Name: PhoneNumber
+            Type: string
+          - Name: StudentID
+            Type: guid
+          - Name: RelationshipID
+            Type: guid
+          - Name: NextOfKinContactInformations
+            Relationship: 1tomany
+            ForeignEntityName: NextOfKinContactInformation
+            ForeignEntityPlural: NextOfKinContactInformations
+      - Name: NextOfKinContactInformation
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: HouseAddress
+            Type: string
+          - Name: City
+            Type: string
+          - Name: State
+            Type: string
+          - Name: ZipCode
+            Type: string
+          - Name: CountryID
+            Type: guid
+          - Name: NextOfKinID
+            Type: guid
+      - Name: Gender
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: GenderName
+            Type: string
+          - Name: Students
+            Relationship: 1tomany
+            ForeignEntityName: Student
+            ForeignEntityPlural: Students
+          - Name: StudentNextOfKins
+            Relationship: 1tomany
+            ForeignEntityName: StudentNextOfKin
+            ForeignEntityPlural: StudentNextOfKins
+      - Name: Country
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: CountryName
+            Type: string
+          - Name: StudentContactInformations
+            Relationship: 1tomany
+            ForeignEntityName: StudentContactInformation
+            ForeignEntityPlural: StudentContactInformations
+          - Name: NextOfKinContactInformations
+            Relationship: 1tomany
+            ForeignEntityName: NextOfKinContactInformation
+            ForeignEntityPlural: NextOfKinContactInformations
+      - Name: Relationship
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: RelationshipName
+            Type: string
+          - Name: StudentNextOfKins
+            Relationship: 1tomany
+            ForeignEntityName: StudentNextOfKin
+            ForeignEntityPlural: StudentNextOfKins

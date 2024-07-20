@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StudentManagement</name>
+    </assembly>
+    <members>
+        <member name="M:StudentManagement.Controllers.v1.CountriesController.AddCountry(StudentManagement.Domain.Countries.Dtos.CountryForCreationDto)">
+            <summary>
+            Creates a new Country record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.CountriesController.GetCountry(System.Guid)">
+            <summary>
+            Gets a single Country by ID.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.CountriesController.GetCountries(StudentManagement.Domain.Countries.Dtos.CountryParametersDto)">
+            <summary>
+            Gets a list of all Countries.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.CountriesController.UpdateCountry(System.Guid,StudentManagement.Domain.Countries.Dtos.CountryForUpdateDto)">
+            <summary>
+            Updates an entire existing Country.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.CountriesController.DeleteCountry(System.Guid)">
+            <summary>
+            Deletes an existing Country record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.GendersController.AddGender(StudentManagement.Domain.Genders.Dtos.GenderForCreationDto)">
+            <summary>
+            Creates a new Gender record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.GendersController.GetGender(System.Guid)">
+            <summary>
+            Gets a single Gender by ID.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.GendersController.GetGenders(StudentManagement.Domain.Genders.Dtos.GenderParametersDto)">
+            <summary>
+            Gets a list of all Genders.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.GendersController.UpdateGender(System.Guid,StudentManagement.Domain.Genders.Dtos.GenderForUpdateDto)">
+            <summary>
+            Updates an entire existing Gender.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.GendersController.DeleteGender(System.Guid)">
+            <summary>
+            Deletes an existing Gender record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.NextOfKinContactInformationsController.AddNextOfKinContactInformation(StudentManagement.Domain.NextOfKinContactInformations.Dtos.NextOfKinContactInformationForCreationDto)">
+            <summary>
+            Creates a new NextOfKinContactInformation record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.NextOfKinContactInformationsController.GetNextOfKinContactInformation(System.Guid)">
+            <summary>
+            Gets a single NextOfKinContactInformation by ID.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.NextOfKinContactInformationsController.GetNextOfKinContactInformations(StudentManagement.Domain.NextOfKinContactInformations.Dtos.NextOfKinContactInformationParametersDto)">
+            <summary>
+            Gets a list of all NextOfKinContactInformations.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.NextOfKinContactInformationsController.UpdateNextOfKinContactInformation(System.Guid,StudentManagement.Domain.NextOfKinContactInformations.Dtos.NextOfKinContactInformationForUpdateDto)">
+            <summary>
+            Updates an entire existing NextOfKinContactInformation.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.NextOfKinContactInformationsController.DeleteNextOfKinContactInformation(System.Guid)">
+            <summary>
+            Deletes an existing NextOfKinContactInformation record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.RelationshipsController.AddRelationship(StudentManagement.Domain.Relationships.Dtos.RelationshipForCreationDto)">
+            <summary>
+            Creates a new Relationship record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.RelationshipsController.GetRelationship(System.Guid)">
+            <summary>
+            Gets a single Relationship by ID.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.RelationshipsController.GetRelationships(StudentManagement.Domain.Relationships.Dtos.RelationshipParametersDto)">
+            <summary>
+            Gets a list of all Relationships.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.RelationshipsController.UpdateRelationship(System.Guid,StudentManagement.Domain.Relationships.Dtos.RelationshipForUpdateDto)">
+            <summary>
+            Updates an entire existing Relationship.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.RelationshipsController.DeleteRelationship(System.Guid)">
+            <summary>
+            Deletes an existing Relationship record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentContactInformationsController.AddStudentContactInformation(StudentManagement.Domain.StudentContactInformations.Dtos.StudentContactInformationForCreationDto)">
+            <summary>
+            Creates a new StudentContactInformation record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentContactInformationsController.GetStudentContactInformation(System.Guid)">
+            <summary>
+            Gets a single StudentContactInformation by ID.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentContactInformationsController.GetStudentContactInformations(StudentManagement.Domain.StudentContactInformations.Dtos.StudentContactInformationParametersDto)">
+            <summary>
+            Gets a list of all StudentContactInformations.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentContactInformationsController.UpdateStudentContactInformation(System.Guid,StudentManagement.Domain.StudentContactInformations.Dtos.StudentContactInformationForUpdateDto)">
+            <summary>
+            Updates an entire existing StudentContactInformation.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentContactInformationsController.DeleteStudentContactInformation(System.Guid)">
+            <summary>
+            Deletes an existing StudentContactInformation record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentNextOfKinsController.AddStudentNextOfKin(StudentManagement.Domain.StudentNextOfKins.Dtos.StudentNextOfKinForCreationDto)">
+            <summary>
+            Creates a new StudentNextOfKin record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentNextOfKinsController.GetStudentNextOfKin(System.Guid)">
+            <summary>
+            Gets a single StudentNextOfKin by ID.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentNextOfKinsController.GetStudentNextOfKins(StudentManagement.Domain.StudentNextOfKins.Dtos.StudentNextOfKinParametersDto)">
+            <summary>
+            Gets a list of all StudentNextOfKins.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentNextOfKinsController.UpdateStudentNextOfKin(System.Guid,StudentManagement.Domain.StudentNextOfKins.Dtos.StudentNextOfKinForUpdateDto)">
+            <summary>
+            Updates an entire existing StudentNextOfKin.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentNextOfKinsController.DeleteStudentNextOfKin(System.Guid)">
+            <summary>
+            Deletes an existing StudentNextOfKin record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentsController.AddStudent(StudentManagement.Domain.Students.Dtos.StudentForCreationDto)">
+            <summary>
+            Creates a new Student record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentsController.GetStudent(System.Guid)">
+            <summary>
+            Gets a single Student by ID.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentsController.GetStudents(StudentManagement.Domain.Students.Dtos.StudentParametersDto)">
+            <summary>
+            Gets a list of all Students.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentsController.UpdateStudent(System.Guid,StudentManagement.Domain.Students.Dtos.StudentForUpdateDto)">
+            <summary>
+            Updates an entire existing Student.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Controllers.v1.StudentsController.DeleteStudent(System.Guid)">
+            <summary>
+            Deletes an existing Student record.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Databases.EntityConfigurations.CountryConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{StudentManagement.Domain.Countries.Country})">
+            <summary>
+            The database configuration for Countries. 
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Databases.EntityConfigurations.GenderConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{StudentManagement.Domain.Genders.Gender})">
+            <summary>
+            The database configuration for Genders. 
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Databases.EntityConfigurations.NextOfKinContactInformationConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{StudentManagement.Domain.NextOfKinContactInformations.NextOfKinContactInformation})">
+            <summary>
+            The database configuration for NextOfKinContactInformations. 
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Databases.EntityConfigurations.RelationshipConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{StudentManagement.Domain.Relationships.Relationship})">
+            <summary>
+            The database configuration for Relationships. 
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Databases.EntityConfigurations.StudentConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{StudentManagement.Domain.Students.Student})">
+            <summary>
+            The database configuration for Students. 
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Databases.EntityConfigurations.StudentContactInformationConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{StudentManagement.Domain.StudentContactInformations.StudentContactInformation})">
+            <summary>
+            The database configuration for StudentContactInformations. 
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Databases.EntityConfigurations.StudentNextOfKinConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{StudentManagement.Domain.StudentNextOfKins.StudentNextOfKin})">
+            <summary>
+            The database configuration for StudentNextOfKins. 
+            </summary>
+        </member>
+        <member name="P:StudentManagement.Domain.Addresses.Address.Line1">
+            <summary>
+            Address line 1 (e.g., street, PO Box, or company name).
+            </summary>
+        </member>
+        <member name="P:StudentManagement.Domain.Addresses.Address.Line2">
+            <summary>
+            Address line 2 (e.g., apartment, suite, unit, or building).
+            </summary>
+        </member>
+        <member name="P:StudentManagement.Domain.Addresses.Address.City">
+            <summary>
+            City, district, suburb, town, or village.
+            </summary>
+        </member>
+        <member name="P:StudentManagement.Domain.Addresses.Address.State">
+            <summary>
+            State, county, province, or region.
+            </summary>
+        </member>
+        <member name="P:StudentManagement.Domain.Addresses.Address.PostalCode">
+            <summary>
+            ZIP or postal code.
+            </summary>
+        </member>
+        <member name="P:StudentManagement.Domain.Addresses.Address.Country">
+            <summary>
+            Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">(ISO 3166-1 alpha-2)</a>.
+            </summary>
+        </member>
+        <member name="M:StudentManagement.Extensions.Services.WebAppServiceConfiguration.AddBoundaryServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])">
+            <summary>
+            Registers all services in the assembly of the given interface.
+            </summary>
+        </member>
+        <member name="T:StudentManagement.Migrations.GenerateDb">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentManagement.Migrations.GenerateDb.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentManagement.Migrations.GenerateDb.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentManagement.Migrations.GenerateDb.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

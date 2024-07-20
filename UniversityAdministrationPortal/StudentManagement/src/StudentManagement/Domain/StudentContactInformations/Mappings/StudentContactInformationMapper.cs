@@ -1,0 +1,14 @@
+namespace StudentManagement.Domain.StudentContactInformations.Mappings;
+
+using StudentManagement.Domain.StudentContactInformations.Dtos;
+using StudentManagement.Domain.StudentContactInformations.Models;
+using Riok.Mapperly.Abstractions;
+
+[Mapper]
+public static partial class StudentContactInformationMapper
+{
+    public static partial StudentContactInformationForCreation ToStudentContactInformationForCreation(this StudentContactInformationForCreationDto studentContactInformationForCreationDto);
+    public static partial StudentContactInformationForUpdate ToStudentContactInformationForUpdate(this StudentContactInformationForUpdateDto studentContactInformationForUpdateDto);
+    public static partial StudentContactInformationDto ToStudentContactInformationDto(this StudentContactInformation studentContactInformation);
+    public static partial IQueryable<StudentContactInformationDto> ToStudentContactInformationDtoQueryable(this IQueryable<StudentContactInformation> studentContactInformation);
+}
